@@ -1,29 +1,30 @@
+// https://github.com/Abu-Sid/assignment-js-1
+
+/*Kilometer To Meter Conversion Function*/
 function kilometerToMeter(kilometer) {
   if (kilometer < 0) {
-    // error massage, if input is negative
-    return "Distance Cannot be Negative";
+    return "Distance Cannot be Negative"; // error massage, if input is negative
   }
   var meter = 1000 * kilometer;
   return meter;
 }
-var result = kilometerToMeter(0);
-// console.log(result);
 
+/*Budget Calculator Function*/
 function budgetCalculator(a, b, c) {
   var watch = 50;
   var mobile = 100;
   var laptop = 500;
-
-  return (totalBudget = watch * a + mobile * b + laptop * c);
+  if (arguments.length == 3) {
+    return (totalBudget = watch * a + mobile * b + laptop * c);
+  }
+  return "Please input three arguments";
 }
 
-console.log(budgetCalculator(1, 1, 1, 33));
-
+/*Hotel Cost Function*/
 function hotelCost(day) {
   var cost = 0;
   if (day < 1) {
-    // error massage,if input 0 or less
-    return "Please select minimum 1 day,Thank you";
+    return "Please select minimum 1 day,Thank you"; // error massage,if input 0 or less
   } else if (day <= 10) {
     cost = day * 100;
   } else if (day <= 20) {
@@ -37,19 +38,17 @@ function hotelCost(day) {
   }
   return cost;
 }
-var totalCost = hotelCost(20);
-// console.log(totalCost);
 
+/*Longest Name Function*/
 function megaFriend(name) {
   var longestName = ""; //Initial comparison value
   for (var i = 0; i < name.length; i++) {
     if (name[i].length > longestName.length) {
-      longestName = name[i]; //output:maximum length of name
+      longestName = name[i]; //output: Longest Name
     }
   }
-  if (longestName == "") {
-    return "There is no Name"; // error massage,if input is an empty String/Array
+  if (longestName == 0) {
+    return "Input is invalid"; // error massage,if input is an empty String/Number
   }
   return longestName;
 }
-// console.log(megaFriend(['']));

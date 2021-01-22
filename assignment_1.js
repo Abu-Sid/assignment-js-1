@@ -44,7 +44,7 @@ function megaFriend(name) {
   var longestName = ""; //Initial comparison value
   for (var i = 0; i < name.length; i++) {
     if (name[i].length > longestName.length) {
-      longestName = name[i]; //output: Longest Name
+      longestName = name[i]; //Output: Longest Name
     }
   }
   if (longestName == 0) {

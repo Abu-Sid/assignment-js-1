@@ -10,14 +10,14 @@ function kilometerToMeter(kilometer) {
 }
 
 /*Budget Calculator Function*/
-function budgetCalculator(numOfwatch, numOfmobile, numOfLaptop) {
+function budgetCalculator(numOfWatch, numOfMobile, numOfLaptop) {
   var watchPrice = 50;
   var mobilePrice = 100;
   var laptopPrice = 500;
   if (arguments.length == 3) {
     return (totalBudget =
-      watchPrice * numOfwatch +
-      mobilePrice * numOfmobile +
+      watchPrice * numOfWatch +
+      mobilePrice * numOfMobile +
       laptopPrice * numOfLaptop);
   }
   return "Please input three arguments";
